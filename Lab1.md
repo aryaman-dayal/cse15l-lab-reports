@@ -4,7 +4,7 @@
 
 Working Directory: /home
 
-I got a blank output when entering cd with no argument because I did not specify a directory to change into, and so it remains in the current working directory of /home. The output is not an error.
+Entering cd with no argument produces a blank output because I did not specify a directory to change into, and so it remains in the current working directory of /home. The output is not an error.
 
 ![Image](two.png)
 
@@ -12,13 +12,13 @@ Working Directory before command was run: /home
 
 Working Directory after command was run: /home/lecture1/messages
 
-When I entered cd with the argument as the path to the directory “lecture1/messages/”, the current working directory changed from /home to /home/lecture1/messages since I specified what directory to change into. This output is not an error.
+Entering cd with the argument as the path to the directory “lecture1/messages/” changed the current working directory from /home to /home/lecture1/messages since I specified what directory to change into. This output is not an error.
 
 ![Image](three.png)
 
 Working Directory: /home
 
-When I entered cd with the argument as the path to the file “lecture1/messages/en-us.txt”, a message was printed in the terminal indicating that the file specified was not a directory and therefore the working directory could not be changed to it. This output is an error, since when using the cd command, you need to include a path to a directory as the argument rather than a file, as the command cannot change the current working directory to a specific file; it must also be a directory in order to be switched into.
+Entering cd with the argument as the path to the file “lecture1/messages/en-us.txt” resulted in a message being printed in the terminal indicating that the file specified was not a directory and therefore the working directory could not be changed to it. This output is an error, since when using the cd command, you need to include a path to a directory as the argument rather than a file, as the command cannot change the current working directory to a specific file; it must also be a directory in order to be switched into.
 
 
 ## ls
