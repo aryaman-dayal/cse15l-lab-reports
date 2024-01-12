@@ -32,7 +32,7 @@ Entering no argument after ls produces the output of all the directories and fil
 
 Working Directory: /home
 
-Entering the path to a specific directory as an argument after ls produces the output listing all the files and directories contained within the specified directory, which in this case is all the .txt files inside of the messages directory. This output is not an error.
+Entering the path to a specific directory as an argument after ls produces the output listing all the files and directories contained within the specified directory, an intended function of the ls command, which in this case is all the .txt files inside of the messages directory. This output is not an error.
 
 ![Image](six.png)
 
@@ -46,7 +46,7 @@ Entering an argument with the path to a file after ls produces the output of the
 
 Working Directory: /home
 
-Entering no argument after cat produces a blank output, unless the user types something after pressing enter the first time. The output is not an error, since when there is no path argument after the user first presses enter, the command cat is intended to print what the user types in after that point back into the terminal when enter is pressed again. This cycle can be exited by entering Ctrl + C.
+Entering no argument after cat produces a blank output, unless the user types something after pressing enter the first time. Since I did not specifcy a file for the cat command to print as part of the argument, which is needed in order to print a file's contents, it does not print anything initially. The output is not an error, since when there is no path argument after the user first presses enter, the command cat is intended to print what the user types in after that point back into the terminal when enter is pressed again. This cycle can be exited by entering Ctrl + C.
 
 ![Image](eight.png)
 
