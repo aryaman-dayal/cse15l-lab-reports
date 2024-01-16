@@ -4,7 +4,7 @@
 
 Working Directory: /home
 
-Entering cd with no argument produces a blank output because I did not specify a directory to change into, and so it remains in the current working directory of /home. The output is not an error.
+Entering cd with no argument results in changing the current working directory to /home because I did not specify a directory to change into, and since I was already in /home, the current working directory remains in /home. The output is not an error.
 
 ![Image](two.png)
 
