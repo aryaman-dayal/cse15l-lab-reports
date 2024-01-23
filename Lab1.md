@@ -2,7 +2,7 @@
 ## cd
 ![Image](one.png)
 
-Working Directory: /home
+Working Directory: `/home`
 
 Entering cd with no argument results in changing the current working directory to /home because I did not specify a directory to change into, and since I was already in /home, the current working directory remains in /home. The output is not an error.
 
