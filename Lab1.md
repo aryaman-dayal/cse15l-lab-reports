@@ -1,5 +1,5 @@
 # Lab Report 1
-## cd
+## `cd`
 ![Image](one.png)
 
 Working Directory: `/home`
