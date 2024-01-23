@@ -52,7 +52,7 @@ Entering no argument after `cat` produces a blank output, unless the user types 
 
 Working Directory: `/home`
 
-Entering the path to a directory as an argument after cat produces the output of a message stating that the path specified is to a directory, meaning the `cat` command cannot print its contents. This output is an error, since directories do not contain text or other concatenable contents found in files, but rather only contain files or other directories within them.
+Entering the path to a directory as an argument after `cat` produces the output of a message stating that the path specified is to a directory, meaning the `cat` command cannot print its contents. This output is an error, since directories do not contain text or other concatenable contents found in files, but rather only contain files or other directories within them.
 
 ![Image](nine.png)
 
