@@ -5,3 +5,11 @@
 ## Server.java Code
 ![Image](ServerFinal.png)
 
+# Using /add-message
+![Image](AddMessage1.png)
+
+----
+
+![Image](AddMessage2.png)
+
+----
