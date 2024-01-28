@@ -23,7 +23,7 @@ The method `handleRequest(URI url)` is called by the main method. The argument p
 ![Image](PrivateKey.png)
 
 # Absolute Path to Public Key
-![Image](PublicKey.png)
+![Image](PublicKeyFinal.png)
 
 # Logging into `ieng6` Account without Password
 ![Image](NoPassword.png)
