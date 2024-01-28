@@ -40,4 +40,4 @@ The method `handleRequest(URI url)` is called by the main method. The argument p
 # What I Learned
 
 
-Something new I learned from week 2 and 3 is how to create a web server using Java. I learned about how the starter code works, the working range for localhost port numbers, and manipulating what is displayed on the page based on varying paths and queries in the webpage's url. I also learned about how to configure SSH for logins to not require a password.
+Something new I learned from week 2 and 3 is how to create a web server using Java. I learned about how the starter code works, the working range for localhost port numbers, and manipulating what is displayed on the page based on varying paths and queries in the webpage's url. I also learned about how to configure `ssh` for logins to not require a password.
