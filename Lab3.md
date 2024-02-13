@@ -59,27 +59,33 @@ This fix addresses the issue because by iterating only to the halfway point of t
 
 ## Part 2
 1) `-i`
+This command makes the grep search case insensitive, thus ignoring the difference between upper and lowercase letters for the string in quotes.
 
-`grep -i "METHODNAME" ./technical/Server.java`
+`grep -i "planes" ./technical/911report/chapter-1.txt`
 
-`grep -i "error" ./technical/test.txt`
+
+`grep -i "dEcLaRaTioN" ./technical/911report/chapter-2.txt`
 
 2) `-l`
-`grep -l "methodName" ./technical/server`
+This command lists all the names of files in the specified directory that contains the string in quotes.
 
-`grep -l "void" ./technical/main`
+`grep -l "WE HAVE SOME PLANES" ./technical/911report`
+
+`grep -l "Older adults are frequently counseled to lose weight" ./technical/biomed`
 
 3) `-r`
+This command makes the grep search recursive, meaning it searches for the string in quotes through every file in the directory and its subdirectories.
 
-`grep -r "methodName" ./technical`
+`grep -r "INSIDE THE FOUR FLIGHTS" ./technical`
 
-`grep -r "void" ./technical`
+`grep -r "In February 1998" ./technical`
 
 4) `-v`
+This command shows lines in the file that do not contain the specified string in quotes.
 
-`grep -v "for" ./technical/Server.java`
+`grep -v "PLANES" ./technical/911report/chapter-1.txt`
 
-`grep -v "assertTrue" ./technical/ServerTester.java`
+`grep -v "President" ./technical/911report/chapter-3.txt`
 
 
 
