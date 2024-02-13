@@ -63,9 +63,13 @@ This command makes the grep search for the lines that contain the string in quot
 
 `grep -i "temperate and nearly cloudless" ./technical/911report/chapter-1.txt`
 
+This command searches for the lines in the file `chapter-1.txt` that contain `temperate and nearly cloudless` regardless of upper or lowercase in said argument.
+
 OUTPUT: `Tuesday, September 11, 2001, dawned temperate and nearly cloudless in the eastern United States. Millions of men and women readied themselves for work. Some made their way to the Twin Towers, the signature structures of the World Trade Center complex in New York City. Others went to Arlington, Virginia, to the Pentagon. Across the Potomac River, the United States Congress was back in session. At the other end of Pennsylvania Avenue, people began to line up for a White House tour. In Sarasota, Florida, President George W. Bush went for an early morning run.`
 
 `grep -i "dEcLaRaTioN" ./technical/911report/chapter-2.txt`
+
+This command searches for the lines in the file `chapter-2.txt` that contain `dEcLaRaTioN` regardless of upper or lowercase in said argument.
 
 OUTPUT: `A DECLARATION OF WAR
                 declaration was only the latest in the long series of his public and private calls
@@ -73,24 +77,32 @@ OUTPUT: `A DECLARATION OF WAR
                 for the countryside, expecting U.S. retaliation. Declarations taking credit for the`
 
 2) `-rl`
-This command lists all the names of files in the specified directory and subdirectories that contains the string in quotes.
+This command lists all the names of files in the specified directory and its subdirectories that contains the string in quotes.
 
 `grep -rl "WE HAVE SOME PLANES" ./technical`
+
+This command lists all the names of files in `./technical` and its subdirectories that contains `WE HAVE SOME PLANES`.
 
 OUTPUT: `docsearch/technical/911report/chapter-1.txt`
 
 `grep -rl "Older adults are frequently counseled to lose weight" ./technical`
 
+This command lists all the names of files in `./technical` and its subdirectories that contains `Older adults are frequently counseled to lose weight`.
+
 OUTPUT: `docsearch/technical/biomed/1468-6708-3-1.txt`
 
 3) `-r`
-This command makes the grep search recursive, meaning it searches for the lines that contain string in quotes through every file in the directory and its subdirectories.
+This command makes the grep search recursive, meaning it searches for the lines that contain the string in quotes through every file in the directory and its subdirectories.
 
 `grep -r "INSIDE THE FOUR FLIGHTS" ./technical`
 
 OUTPUT: `docsearch/technical/911report/chapter-1.txt:INSIDE THE FOUR FLIGHTS`
 
+This command searches for the lines that contain `INSIDE THE FOUR FLIGHTS` through every file in the directory `./technical` and its subdirectories.
+
 `grep -r "In February 1998" ./technical`
+
+This command searches for the lines that contain `In February 1998` through every file in the directory `./technical` and its subdirectories.
 
 OUTPUT: `docsearch/technical/911report/chapter-2.txt:            In February 1998, the 40-year-old Saudi exile Usama Bin Ladin and a fugitive Egyptian`
 
@@ -98,6 +110,8 @@ OUTPUT: `docsearch/technical/911report/chapter-2.txt:            In February 199
 This command shows lines in the file that do not contain the specified string in quotes.
 
 `grep -v "a" ./technical/government/About_LSC/ODonnell_et_al_v_LSCdecision.txt`
+
+This command shows lines in the file that do not contain `a`.
 
 OUTPUT: 
 ```
@@ -130,7 +144,10 @@ VACATED AND REMANDED WITH INSTRUCTIONS
 Corp., 940 F.2d 685, 697
 ```
 
+
 `grep -v "e" ./technical/government/About_LSC/ODonnell_et_al_v_LSCdecision.txt`
+
+This command shows lines in the file that do not contain `e`.
 
 OUTPUT: 
 ```
@@ -158,6 +175,9 @@ with instructions to dismiss.
 VACATED AND REMANDED WITH INSTRUCTIONS
 Corp., 940 F.2d 685, 697
 ```
+
+## [SOURCE USED](https://www.gnu.org/software/grep/manual/html_node/index.html)
+
 
 
 
