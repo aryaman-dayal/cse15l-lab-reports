@@ -59,7 +59,7 @@ This fix addresses the issue because by iterating only to the halfway point of t
 
 ## Part 2
 1) `-i`
-This command makes the grep search case insensitive, thus ignoring the difference between upper and lowercase letters for the string in quotes.
+This command makes the grep search for the lines that contain the string in quotes case insensitive, thus ignoring the difference between upper and lowercase letters for the string in quotes.
 
 `grep -i "temperate and nearly cloudless" ./technical/911report/chapter-1.txt`
 
@@ -72,27 +72,92 @@ OUTPUT: `A DECLARATION OF WAR
                 the time he issued his February 1998 declaration of war, Bin Ladin had nurtured that
                 for the countryside, expecting U.S. retaliation. Declarations taking credit for the`
 
-2) `-l`
-This command lists all the names of files in the specified directory that contains the string in quotes.
+2) `-rl`
+This command lists all the names of files in the specified directory and subdirectories that contains the string in quotes.
 
-`grep -l "WE HAVE SOME PLANES" ./technical/911report`
+`grep -rl "WE HAVE SOME PLANES" ./technical`
 
-`grep -l "Older adults are frequently counseled to lose weight" ./technical/biomed`
+OUTPUT: `docsearch/technical/911report/chapter-1.txt`
+
+`grep -rl "Older adults are frequently counseled to lose weight" ./technical`
+
+OUTPUT: `docsearch/technical/biomed/1468-6708-3-1.txt`
 
 3) `-r`
-This command makes the grep search recursive, meaning it searches for the string in quotes through every file in the directory and its subdirectories.
+This command makes the grep search recursive, meaning it searches for the lines that contain string in quotes through every file in the directory and its subdirectories.
 
 `grep -r "INSIDE THE FOUR FLIGHTS" ./technical`
 
+OUTPUT: `docsearch/technical/911report/chapter-1.txt:INSIDE THE FOUR FLIGHTS`
+
 `grep -r "In February 1998" ./technical`
+
+OUTPUT: `docsearch/technical/911report/chapter-2.txt:            In February 1998, the 40-year-old Saudi exile Usama Bin Ladin and a fugitive Egyptian`
 
 4) `-v`
 This command shows lines in the file that do not contain the specified string in quotes.
 
-`grep -v "PLANES" ./technical/911report/chapter-1.txt`
+`grep -v "a" ./technical/government/About_LSC/ODonnell_et_al_v_LSCdecision.txt`
 
-`grep -v "President" ./technical/911report/chapter-3.txt`
+OUTPUT: 
+```
+UNITED STATES COURT OF APPEALS
 
+FOR THE FOURTH CIRCUIT
+SERVICES OF SOUTHWEST VIRGINIA, INCORPORATED,
+� No. 00-1901
+v.
+Judge. (CA-00-33-2)
+Decided: June 25, 2001
+Senior Circuit Judge.
+opinion.
+O'DONNELL v. EIDLEMAN
+
+COUNSEL
+
+
+OPINION
+PER CURIAM:
+I.
+O'DONNELL v. EIDLEMAN
+on the merits.
+II.
+v. Ash, 422
+O'DONNELL v. EIDLEMAN
+III.
+with instructions to dismiss.
+VACATED AND REMANDED WITH INSTRUCTIONS
+Corp., 940 F.2d 685, 697
+```
+
+`grep -v "e" ./technical/government/About_LSC/ODonnell_et_al_v_LSCdecision.txt`
+
+OUTPUT: 
+```
+UNITED STATES COURT OF APPEALS
+
+FOR THE FOURTH CIRCUIT
+SERVICES OF SOUTHWEST VIRGINIA, INCORPORATED,
+� No. 00-1901
+v.
+opinion.
+O'DONNELL v. EIDLEMAN
+
+COUNSEL
+
+
+OPINION
+PER CURIAM:
+I.
+O'DONNELL v. EIDLEMAN
+II.
+v. Ash, 422
+O'DONNELL v. EIDLEMAN
+III.
+with instructions to dismiss.
+VACATED AND REMANDED WITH INSTRUCTIONS
+Corp., 940 F.2d 685, 697
+```
 
 
 
