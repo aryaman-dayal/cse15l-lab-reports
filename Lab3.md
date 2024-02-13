@@ -61,10 +61,16 @@ This fix addresses the issue because by iterating only to the halfway point of t
 1) `-i`
 This command makes the grep search case insensitive, thus ignoring the difference between upper and lowercase letters for the string in quotes.
 
-`grep -i "planes" ./technical/911report/chapter-1.txt`
+`grep -i "temperate and nearly cloudless" ./technical/911report/chapter-1.txt`
 
+OUTPUT: `Tuesday, September 11, 2001, dawned temperate and nearly cloudless in the eastern United States. Millions of men and women readied themselves for work. Some made their way to the Twin Towers, the signature structures of the World Trade Center complex in New York City. Others went to Arlington, Virginia, to the Pentagon. Across the Potomac River, the United States Congress was back in session. At the other end of Pennsylvania Avenue, people began to line up for a White House tour. In Sarasota, Florida, President George W. Bush went for an early morning run.`
 
 `grep -i "dEcLaRaTioN" ./technical/911report/chapter-2.txt`
+
+OUTPUT: `A DECLARATION OF WAR
+                declaration was only the latest in the long series of his public and private calls
+                the time he issued his February 1998 declaration of war, Bin Ladin had nurtured that
+                for the countryside, expecting U.S. retaliation. Declarations taking credit for the`
 
 2) `-l`
 This command lists all the names of files in the specified directory that contains the string in quotes.
