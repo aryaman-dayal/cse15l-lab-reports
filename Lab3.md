@@ -58,3 +58,29 @@ static void reverseInPlace(int[] arr) {
 This fix addresses the issue because by iterating only to the halfway point of the array, hence the `i < arr.length / 2` condition in the `for` loop, thus ensuring that the method doesn't undo its previous work of swapping positions after this halfway point. Next, the `temp` variable to store the value at a position previously while that position is given the new reversed value is necessary in order to replace that old value in its new position, otherwise it would be overwritten without its value able to be recalled to be repositioned to its reversed position later, which was the issue with the original method before the fix.
 
 ## Part 2
+1) `-i`
+
+`grep -i "METHODNAME" ./technical/Server.java`
+
+`grep -i "error" ./technical/test.txt`
+
+2) `-l`
+`grep -l "methodName" ./technical/server`
+
+`grep -l "void" ./technical/main`
+
+3) `-r`
+
+`grep -r "methodName" ./technical`
+
+`grep -r "void" ./technical`
+
+4) `-v`
+
+`grep -v "for" ./technical/Server.java`
+
+`grep -v "assertTrue" ./technical/ServerTester.java`
+
+
+
+
