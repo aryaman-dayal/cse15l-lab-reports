@@ -176,7 +176,7 @@ VACATED AND REMANDED WITH INSTRUCTIONS
 Corp., 940 F.2d 685, 697
 ```
 
-## [SOURCE USED](https://www.gnu.org/software/grep/manual/html_node/index.html)
+## [LINK TO SOURCE USED FOR ALL COMMANDS](https://www.gnu.org/software/grep/manual/html_node/index.html)
 
 
 
