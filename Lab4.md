@@ -1,7 +1,7 @@
 # Lab Report 4
 ## Step 4
 I typed in the command `ssh adayal@ieng6.ucsd.edu` into the terminal then pressed `<enter>`. This allowed me to log into `ieng6` as described by the step.
-![Image](LR4 1.png)
+![Image](LR41.png)
 
 ## Step 5
 I typed in the command `git clone git@github.com:aryaman-dayal/lab7.git` , pressed `<enter>`, then typed in `cd lab7` and pressed `<enter>` to change my current working directory to `lab7`. This was done in order to clone my forked Lab7 repository whilst logged into `ieng6`.
