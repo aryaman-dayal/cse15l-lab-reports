@@ -14,7 +14,8 @@ I typed in the command `git clone git@github.com:aryaman-dayal/lab7.git` , press
 ## Step 6
 I typed in the command `ls` to see a list of the file names in the current working directory of `lab7` in order to find the name of the `.sh` file I needed to run in order to run the necessary tests on the files. I then typed `bash test.sh` to run the bash script that runs the needed tests, and saw that one test failed.
 
-![Image]()
+![Image](LR44.png)
+![Image](LR45.png)
 
 ## Step 7
 I typed in `vim L` then pressed `<tab>` in order to autofill the file name `ListExamples` and typed in the remaining `.java`. I then pressed `<down>` arrow 18 times, then `<right>` arrow one time in order to navigate me to the correct character location in the correct line needed to fix the bug in `ListExamples.java`. In then pressed `i` then `<backspace>` then `2`, thus replacing the `1` in the `index1` part of the line with `2`, thus fixing the issue causing the test ran earlier to fail. I then press `<esc>` then type `:wq` and press `<enter>` to write my changes to the file and save it, then quit the vim editor. 
